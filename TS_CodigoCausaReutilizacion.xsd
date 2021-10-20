@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="TS_CodigoCausaReutilizacion">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="A"/>
+			<xsd:enumeration value="B"/>
+			<xsd:enumeration value="C"/>
+			<xsd:enumeration value="D"/>
+			<xsd:enumeration value="E"/>
+			<xsd:enumeration value="F"/>
+			<xsd:enumeration value="G"/>
+			<xsd:enumeration value="H"/>
+			<xsd:enumeration value="I"/>
+			<xsd:enumeration value="J"/>
+			<xsd:enumeration value="K"/>
+			<xsd:enumeration value="L"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation xml:lang="es">
+			- A - La seguridad nacional.
+			- B - La defensa.
+			- C - Las relaciones exteriores.
+			- D - La seguridad pública.
+			- E - La prevención, investigación y sanción de los ilícitos penales, administrativos o disciplinarios.
+			- F - La igualdad de las partes en los procesos judiciales y la tutela judicial efectiva.
+			- G - Las funciones administrativas de vigilancia, inspección y control.
+			- H - Los intereses económicos y comerciales.
+			- I - La política económica y monetaria.
+			- J - El secreto profesional y la propiedad intelectual e industrial.
+			- K - La garantía de la confidencialidad o el secreto requerido en procesos de toma de decisión.
+			- L - La protección del medio ambiente.
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

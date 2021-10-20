@@ -1,0 +1,10 @@
+<xsd:complexType name="Traza">
+    <xs:sequence>
+      <xs:element name="Accion" type="xs:Acciones" />
+      <xs:element name="MotivoReglado" type="xs:string" />
+      <xs:element name="UsuariodelaAccion" type="xs:string" />
+      <xs:element name="Descripcion" type="xs:string" />
+      <xs:element name="ModificacionMetadatos" type="xs:string" />
+      <xs:element name="HistoriadelCambio" type="xs:HistorialCambio" /><!-- Pag 70 Preguntar Ing Cobos-->
+    </xs:sequence>
+  </xs:complexType>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="TC_Entidad_Relacionada">
+		<xsd:sequence>
+			<xsd:element name="IdRelacionada" type="xsd:string" />
+			<xsd:element name="RolRelacion" type="TS_RolRelacion" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="TS_RolRelacion">
+		<xsd:restriction base="xsd:decimal">
+			<xsd:enumeration value="1"/>
+			<xsd:enumeration value="2"/>
+		</xsd:restriction>
+		<!---1 -se origina a la entidad relacionada
+			-2 -se recibe desde la entidad relacionada-->
+	</xsd:simpleType>
+</xsd:schema>
+

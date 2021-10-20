@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:simpleType name="T_TipoDocumental">
+    <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="TD01"/>
+        <xsd:enumeration value="TD02"/>
+        <xsd:enumeration value="TD03"/>
+        <xsd:enumeration value="TD04"/>
+        <xsd:enumeration value="TD05"/>
+        <xsd:enumeration value="TD06"/>
+        <xsd:enumeration value="TD07"/>
+        <xsd:enumeration value="TD08"/>
+        <xsd:enumeration value="TD09"/>
+        <xsd:enumeration value="TD10"/>
+        <xsd:enumeration value="TD11"/>
+        <xsd:enumeration value="TD12"/>
+        <xsd:enumeration value="TD13"/>
+        <xsd:enumeration value="TD14"/>
+        <xsd:enumeration value="TD15"/>
+        <xsd:enumeration value="TD16"/>
+        <xsd:enumeration value="TD17"/>
+        <xsd:enumeration value="TD18"/>
+        <xsd:enumeration value="TD19"/>
+        <xsd:enumeration value="TD20"/>
+        <xsd:enumeration value="TD21"/>
+        <xsd:enumeration value="TD22"/>
+        <xsd:enumeration value="TD23"/>
+        <xsd:enumeration value="TD24"/>
+        <xsd:enumeration value="TD25"/>
+        <xsd:enumeration value="TD26"/>
+        <xsd:enumeration value="TD27"/>
+        <xsd:enumeration value="TD28"/>
+        <xsd:enumeration value="TD29"/>
+        <xsd:enumeration value="TD30"/>
+        <xsd:enumeration value="TD31"/>
+        <xsd:enumeration value="TD32"/>
+        <xsd:enumeration value="TD33"/>
+        <xsd:enumeration value="TD34"/>
+        <xsd:enumeration value="TD35"/>
+        <xsd:enumeration value="TD36"/>
+        <xsd:enumeration value="TD37"/>
+        <xsd:enumeration value="TD99"/>
+    </xsd:restriction>
+</xs:simpleType>
+</xs:schema>

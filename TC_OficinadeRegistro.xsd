@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="TC_OficinadeRegistro">
+		<xsd:sequence>
+			<xsd:element name="DependenciaDestino" type="xsd:TS_Dependencias" />
+			<xsd:element name="Destinatario" type="xsd:TS_BDCGR" /><!--consultar Ing Cobos-->
+			<xsd:element name="RemitenteExterno" type="xsd:string" />
+			<xsd:element name="DependenciaOrigen" type="xsd:TS_Dependencias" />
+			<xsd:element name="Remitente" type="xsd:TS_BDCGR" />
+			<xsd:element name="DestinatarioExterno" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="TS_TipodeComunicacion">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="ER"/>
+			<xsd:enumeration value="EE"/>
+			<xsd:enumeration value="IE"/>
+			<xsd:enumeration value="O"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation xml:lang="es">
+			-ER	    -Externo Recibido
+			-EE		-Externo Enviado
+			-IE		-Interno Enviado
+			-O		-Registro Documento
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

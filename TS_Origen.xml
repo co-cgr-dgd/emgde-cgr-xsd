@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:simpleType name="T_origen">
+    <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="Ciudadano"/>
+        <xsd:enumeration value="Organización de la sociedad civil. Administración"/>
+        <xsd:enumeration value="Población que requiere atención especial por condiciones de vulnerabilidad."/>
+        <xsd:enumeration value="Congreso de la República"/>
+        <xsd:enumeration value="Corporaciones públicas territoriales: Asambleas departamentales, consejos municipales."/>
+        <xsd:enumeration value="Rama Judicial"/>
+        <xsd:enumeration value="gobernantes de departamentos, distritos y municipios."/>
+        <xsd:enumeration value="Organismos y entidades de la administración pública sujetos de control de la Contraloría General de la república"/>
+        <xsd:enumeration value="Órganos de control fiscal del orden territorial( entes fiscales subnacionales)"/>
+        <xsd:enumeration value="Grupos de Interés – oficinas de control interno"/>
+        <xsd:enumeration value="Grupos de Interés – interventores de obra"/>
+        <xsd:enumeration value="Grupos de Interés – ONG"/>
+        <xsd:enumeration value="Grupos de Interés – Academia"/>
+        <xsd:enumeration value="Administración(Interno)"/>
+    </xsd:restriction>
+</xs:simpleType>
+</xs:schema>

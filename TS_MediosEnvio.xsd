@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="TS_MediosEnvio">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="D"/>
+			<xsd:enumeration value="MI"/>
+			<xsd:enumeration value="P"/>
+			<xsd:enumeration value="UC"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation xml:lang="es">
+			-D	-Digital.
+			-MI	-Mensajería Interna.
+			-P	-Personal.
+			-UC	-Unidad de Correspondencia
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

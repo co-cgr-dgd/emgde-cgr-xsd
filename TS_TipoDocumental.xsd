@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="TS_TipoDocumental">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="TD001"/>
+			<xsd:enumeration value="TD002"/>
+			<xsd:enumeration value="TD003"/>
+			<xsd:enumeration value="TD004"/>
+			<xsd:enumeration value="TD005"/>
+			<xsd:enumeration value="TD006"/>
+			<xsd:enumeration value="TD007"/>
+			<xsd:enumeration value="TD008"/>
+			<xsd:enumeration value="TD009"/>
+			<xsd:enumeration value="TD010"/>
+			<xsd:enumeration value="TD011"/>
+			<xsd:enumeration value="TD012"/>
+			<xsd:enumeration value="TD013"/>
+			<xsd:enumeration value="TD014"/>
+			<xsd:enumeration value="TD015"/>
+			<xsd:enumeration value="TD016"/>
+			<xsd:enumeration value="TD017"/>
+			<xsd:enumeration value="TD018"/>
+			<xsd:enumeration value="TD019"/>
+			<xsd:enumeration value="TD020"/>
+			<xsd:enumeration value="TD021"/>
+			<xsd:enumeration value="TD022"/>
+			<xsd:enumeration value="TD023"/>
+			<xsd:enumeration value="TD024"/>
+			<xsd:enumeration value="TD025"/>
+			<xsd:enumeration value="TD026"/>
+			<xsd:enumeration value="TD027"/>
+			<xsd:enumeration value="TD028"/>
+			<xsd:enumeration value="TD029"/>
+			<xsd:enumeration value="TD030"/>
+			<xsd:enumeration value="TD031"/>
+			<xsd:enumeration value="TD032"/>
+			<xsd:enumeration value="TD033"/>
+			<xsd:enumeration value="TD034"/>
+			<xsd:enumeration value="TD035"/>
+			<xsd:enumeration value="TD036"/>
+			<xsd:enumeration value="TD037"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation xml:lang="es">
+			-TD001	-Acción de Tutela
+			-TD002	-Consultas
+			-TD003	-Convenio
+			-TD004	-Convenio o Contrato
+			-TD005	-Cotización
+			-TD006	-Cuenta de Cobro
+			-TD007	-Factura
+			-TD008	-Formato
+			-TD009	-Petición
+			-TD010	-Guía
+			-TD011	-Informe
+			-TD012	-Acta
+			-TD013	-Instructivo
+			-TD014	-invitación
+			-TD015	-Memorando
+			-TD016	-Notificación
+			-TD017	-Oficio
+			-TD018	-Otros
+			-TD019	-Periódico
+			-TD020	-Planilla
+			-TD021	-Certificación
+			-TD022	-Poder
+			-TD023	-Programación
+			-TD024	-Queja
+			-TD025	-Resolución
+			-TD026	-Respuesta Queja
+			-TD027	-Revista
+			-TD028	-Sobre cerrado
+			-TD029	-Solicitud
+			-TD030	-Telegrama
+			-TD031	-Tutela
+			-TD032	-Certificado de disponibilidad Presupuestal
+			-TD033	-Servicio Archivístico
+			-TD034	-Circular
+			-TD035	-Citación
+			-TD036	-Comprobante de pago
+			-TD037	-Comprobante de Salida
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>
+<!--
+Los valores QUE PUEDE TOMAR TIPO DE DOCUMENTO SON:
+TD001	Acción de Tutela
+TD002	Consultas
+TD003	Convenio
+TD004	Convenio o Contrato
+TD005	Cotización
+TD006	Cuenta de Cobro
+TD007	Factura
+TD008	Formato
+TD009	Petición
+TD010	Guía
+TD011	Informe
+TD012	Acta
+TD013	Instructivo
+TD014	invitación
+TD015	Memorando
+TD016	Notificación
+TD017	Oficio
+TD018	Otros
+TD019	Periódico
+TD020	Planilla
+TD021	Certificación
+TD022	Poder
+TD023	Programación
+TD024	Queja
+TD025	Resolución
+TD026	Respuesta Queja
+TD027	Revista
+TD028	Sobre cerrado
+TD029	Solicitud
+TD030	Telegrama
+TD031	Tutela
+TD032	Certificado de disponibilidad Presupuestal
+TD033	Servicio Archivístico
+TD034	Circular
+TD035	Citación
+TD036	Comprobante de pago
+TD037	Comprobante de Salida
+
+
+-->

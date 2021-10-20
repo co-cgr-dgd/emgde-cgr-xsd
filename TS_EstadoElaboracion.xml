@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="T_EstadoElaboracion">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="EE01"/>
+            <xs:enumeration value="EE02"/>
+            <xs:enumeration value="EE03"/>
+            <xs:enumeration value="EE04"/>
+            <xs:enumeration value="EE99"/>
+       </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
+<!-- EE01 (Original)
+            EE02 (Copia electrónica auténtica con cambio de formato) 
+            EE03 (Copia electrónica auténtica de documento papel) 
+            EE04 (Copia electrónica parcial auténtica)
+            EE99 (Otros) -->

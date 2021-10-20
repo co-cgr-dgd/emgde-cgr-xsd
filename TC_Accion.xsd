@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="TC_Accion">
+		<xsd:sequence>
+			<xsd:element name="DescripcionAccion" type="xsd:string" />
+			<xsd:element name="FechaAccion" type="xsd:date" />
+			<xsd:element name="ObjetoAccion" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType >
+</xsd:schema>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:simpleType name="T_Acceso">
+    <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="PUBLICA"/>
+        <xsd:enumeration value="CLASIFICADA"/>
+        <xsd:enumeration value="RESERVADA"/>
+    </xsd:restriction>
+</xsd:simpleType>
+</xsd:schema>

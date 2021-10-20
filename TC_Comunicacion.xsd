@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="TC_Comunicacion">
+		<xsd:sequence>
+			<xsd:element name="Comunicacion" type="xsd:TS_TipodeComunicacion" />
+			<xsd:element name="FechaAsientoRegistral" type="xsd:date" />
+			<xsd:element name="NumerodeRadicado" type="xsd:decimal" />
+			<xsd:element name="Asunto" type="xsd:TS_Asunto" />
+			<!-- ojo no es String es TS_Asunto-->
+			<xsd:element name="FoliosFisicos" type="xsd:decimal" />
+			<xsd:element name="Observaciones" type="xsd:string" />
+			<xsd:element name="MediosdeEnvio" type="xsd:TS_MediosEnvio" />
+			<xsd:element name="Soporte" type="xsd:TS_Soporte" />
+			<xsd:element name="UnidaddeCorrespondencia" type="xsd:TS_UC" />
+			<xsd:element name="Anexos" type="xsd:string" />
+			<xsd:element name="TrazabilidaddelDocumento" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

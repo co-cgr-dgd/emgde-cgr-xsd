@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:simpleType name="T_FormatoFirma">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="TF01"/>
+            <xsd:enumeration value="TF02"/>
+            <xsd:enumeration value="TF03"/>
+            <xsd:enumeration value="TF04"/>
+            <xsd:enumeration value="TF05"/>
+            <xsd:enumeration value="TF06"/>
+            <xsd:enumeration value="TF07"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

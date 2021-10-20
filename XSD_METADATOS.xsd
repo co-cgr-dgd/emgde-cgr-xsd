@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.w3schools.com TS_CategoriaDocumental.xsd">
+    <xsd:element name="Esquema">
+      <xsd:complexType >
+        <xsd:sequence>
+          <xsd:element name="Categoria" type="xsd:TS_CategoriaDocumental" /><!-- TS TIPO SIMPLE-->
+          <xsd:element name="Identificador" type="xsd:TC_Identificador" /><!-- TC TIPO COMPLEX-->
+          <xsd:element name="Nombre" type="xsd:TC_Nombre" />
+          <xsd:element name="Fecha" type="xsd:TC_Fecha" />
+          <xsd:element name="Descripción" type="xsd:String" />
+          <xsd:element name="EntidadRelacionada" type="xsd:TC_Entidad_Relacionada" />
+          <xsd:element name="DerechosdeAccesoyReutilizacion" type="xsd:TC_Derechos_Acceso" />
+          <xsd:element name="PuntosdeAcceso" type="xsd:TC_Punto_Acceso" />
+          <xsd:element name="Calificacion" type="xsd:TC_Calificaciones" />
+          <xsd:element name="CaracteristicasTecnicas" type="xsd:TC_Formatos" />
+          <xsd:element name="Firma" type="xsd:TC_TipoFirma" />
+          <xsd:element name="TipoDocumental" type="xsd:TS_TipoDocumental" />
+          <xsd:element name="EstadodeElaboracion" type="xsd:TS_EstadoElaboracion" />
+          <xsd:element name="Trazabilidad" type="xsd:TC_Traza" />
+          <xsd:element name="OrigendelDocumento" type="xsd:TS_Origen" />
+          <xsd:element name="EstadodelExpediente" type="xsd:TS_EstadoExpediente" />
+          <xsd:element name="Interesado" type="xsd:TC_Interesado" />
+          <xsd:element name="Comunicacion" type="xsd:TC_Comunicacion" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
+
+  <xs:complexType name="TS_Comunicacion">
+    <xs:sequence>
+      <xs:element name="Comunicacion" type="xs:Comunicados" />
+      <xs:element name="FechaAsientoRegistral" type="xs:date" />
+      <xs:element name="NumerodeRadicado" type="xs:decimal" />
+      <xs:element name="Asunto" type="xs:String" /><!-- ojo no es String es TS_Asunto-->
+      <xs:element name="Descripción" type="xs:String" />
+      <xs:element name="FoliosFisicos" type="xs:decimal" />
+      <xs:element name="Observaciones" type="xs:String" />
+      <xs:element name="MediosdeEnvio" type="xs:TS_MediosEnvio" />
+      <xs:element name="Soporte" type="xs:TS_Soporte" />
+      <xs:element name="UnidaddeCorrespondencia" type="xs:TS_UC" />
+      <xs:element name="Anexos" type="xs:String" />
+      <xs:element name="TrazabilidaddelDocumento" type="xs:String" />
+    </xs:sequence>
+  </xs:complexType>
+
+  
+
+ 
+
+  
+
+  <xs:complexType name="TC_Derechos_Acceso">
+    <xs:sequence>
+      <xs:element name="TipodeAcceso" type="xs:T_TipoAcceso" /><!-- esta dos veces definida aqui en la linea 80-->
+      <xs:element name="CodigoCausaReutilización" type="xs:string" />
+      <xs:element name="CausaLegalNormativa" type="xs:string" />
+      <xs:element name="CondicionesdeReutilización" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Punto_Acceso"><!-- revisar a que corresponde-->
+    <xs:sequence>
+      <xs:element name="TerminodePuntosdeAcceso" type="xs:T_PuntoAcceso" /><!-- repetida linea 65-->
+      <xs:element name="IdPuntodeAcceso" type="xs:String" />
+      <xs:element name="EsquemaPuntoAcceso" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Calificaciones">
+    <xs:sequence>
+      <xs:element name="Valoracion" type="xs:ValorPrimario" />
+      <xs:element name="Dictamen" type="xs:Dictaminación" />
+      <xs:element name="Trasferencia" type="xs:Trasferencias"/>
+      <xs:element name="DocumentoExcencial" type="xs:DocumentosExcenciales"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TC_Formatos">
+    <xs:sequence>
+      <xs:element name="NombredelFormato" type="xs:String" />
+      <xs:element name="ExtensiondeArchivo" type="xs:T_ExtensionArchivo" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TC_TipoFirma">
+    <xs:sequence>
+      <xs:element name="TipodeFirma" type="xs:TS_FormatoFirma" />
+    </xs:sequence>
+  </xs:complexType>
+
+    <xs:complexType name="Interesados">
+    <xs:sequence>
+      <xs:element name="TipoInteresado" type="xs:T_Interesado" />
+      <xs:element name="NombreInteresado" type="xs:string" />
+      <xs:element name="IdentificadorInteresado" type="xs:T_IdInteresado" />
+      <xs:element name="UbicacionInteresado" type="xs:string" /> <!-- 28.4 como se desglosa? Ing Cobos-->
+      <xs:element name="Direccion" type="xs:string" />
+      <xs:element name="Contacto" type="xs:DirectorioContacto" />
+      </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Acciones">
+    <xs:sequence>
+      <xs:element name="DescripcionAccion" type="xs:String" />
+      <xs:element name="FechadelaAccion" type="xs:date" />
+      <xs:element name="ObjetodelaAccion" type="xs:String" />
+     </xs:sequence>
+  </xs:complexType>
+
+
+
+</xs:schema>

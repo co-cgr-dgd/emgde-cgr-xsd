@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="TC_Punto_Acceso">
+		<xsd:sequence>
+			<xsd:element name="TerminoPuntoAcceso" type="xsd:string" />
+			<xsd:element name="IdPuntoAcceso" type="xsd:decimal" />
+			<xsd:element name="EsquemaPuntoAcceso" type="xsd:string" />
+			<!-- consultar al ING. Cobos 12.2 sobre el ID pag 36-->
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>
