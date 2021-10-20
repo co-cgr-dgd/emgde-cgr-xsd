@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xsd:simpleType name="Agrupación">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="DOCUMENTO SIMPLE"/>
+            <xsd:enumeration value="EXPEDIENTE"/>
+            <xsd:enumeration value="SERIE"/>
+            <xsd:enumeration value="SUBSERIE"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xs:schema>
