@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+Expediente_RF Depurado
+<xs:element name="Expediente" type="TipoExpediente"/>
+
+<xs:complexType name="TipoExpediente">
+<xs:sequence>
+  <xs:element name="idExpediente" type="ItemLista" />
+  <xs:element name="Responsable" type="xs:string" />
+  <xs:element name="Dependencia" type="ItemLista" />
+  <xs:element name="Serie" type="TipoSerie"/>
+  <xs:element name="FechaInicial" type="xs:date"/>
+  <xs:element name="FechaFinal" type="xs:date"/>
+  <xs:element name="SubExpediente" type="TipoExpediente"/>
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="ItemLista">
+  <xs:sequence>
+    <xs:element name="Id" type="xs:unsignedByte" />
+    <xs:element name="Nombre" type="xs:string" />
+  </xs:sequence>
+</xs:complexType>
+<xs:complexType name="TipoSerie">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:decimal"/>
+      <xs:element name="Nombre" type="xs:string"/>
+      <xs:element name="SubSerie" type= "TipoSerie" minOccurs="0"/> 
+    </xs:sequence>
+</xs:complexType>
+</xs:schema>   
