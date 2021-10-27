@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<xsd:complexType name="TC_Trasferencia">
-		<xsd:sequence>
-			<xsd:element name="FasedeArchivo" type="xsd:TS_FaseArchivo" />
-			<xsd:element name="PlazoTrasferencia" type="xsd:string" />
-		</xsd:sequence>
-	</xsd:complexType >
-</xsd:schema>

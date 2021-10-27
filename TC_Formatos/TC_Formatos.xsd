@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="TC_Formatos">
+		<xsd:sequence>
+			<xsd:element name="NombreFormato" type="xsd:string" />
+			<xsd:element name="ExtensionFormato" type="TS_ExtensionArchivo" />
+		</xsd:sequence>
+	</xsd:complexType >
+</xsd:schema>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="TS_FormatoFirma">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="TF01"/>
+			<xsd:enumeration value="TF02"/>
+			<xsd:enumeration value="TF03"/>
+			<xsd:enumeration value="TF04"/>
+			<xsd:enumeration value="TF05"/>
+			<xsd:enumeration value="TF06"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation xml:lang="es">
+			-TF01 -(CSV)
+			-TF02 -(XAdES internally detached signature),
+			-TF03 -(XAdES enveloped signature),
+			-TF04 -(CAdES detached/explicit signature),
+			-TF05 -(CAdES attached/implicit signature),
+			-TF06 -(PAdES)
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

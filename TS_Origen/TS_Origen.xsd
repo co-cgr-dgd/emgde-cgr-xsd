@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="TS_Origen">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="0"/>
+			<xsd:enumeration value="1"/>
+			<xsd:enumeration value="2"/>
+			<xsd:enumeration value="3"/>
+			<xsd:enumeration value="4"/>
+			<xsd:enumeration value="5"/>
+			<xsd:enumeration value="6"/>
+			<xsd:enumeration value="7"/>
+			<xsd:enumeration value="8"/>
+			<xsd:enumeration value="9"/>
+			<xsd:enumeration value="10"/>
+			<xsd:enumeration value="11"/>
+			<xsd:enumeration value="12"/>
+			<xsd:enumeration value="13"/>
+			<xsd:enumeration value="14"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation xml:lang="es">
+			-0 -Ciudadano
+			-1 -Organización de la sociedad civil. Administración
+			-2 -Población que requiere atención especial por condiciones de vulnerabilidad.
+			-3 -Congreso de la República
+			-4 -Presidencia de la República
+			-5 -Corporaciones públicas territoriales: Asambleas departamentales, consejos municipales.
+			-6 -Rama Judicial
+			-7 -gobernantes de departamentos, distritos y municipios.
+			-8 -Organismos y entidades de la administración pública sujetos de control de la Contraloría General de la república
+			-9 -Órganos de control fiscal del orden territorial( entes fiscales subnacionales)
+			-10 -Grupos de Interés – oficinas de control interno
+			-11 -Grupos de Interés – interventores de obra
+			-12 -Grupos de Interés – ONG
+			-13 -Grupos de Interés – Academia
+			-14 -Administración(Interno)Momento de asignación del valor del elemento: En el punto de captura
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

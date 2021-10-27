@@ -6,7 +6,6 @@
     <xsd:element name="Esquema">
       <xsd:complexType >
         <xsd:sequence>
-          <xsd:element ref="ts_cd:TS_CategoriaDocumental"/>
           <xsd:element name="Categoria" type="ts_cd:TS_CategoriaDocumental" /><!-- TS TIPO SIMPLE-->
           <xsd:element name="Identificador" type="xsd:TC_Identificador" /><!-- TC TIPO COMPLEX-->
           <xsd:element name="Nombre" type="xsd:TC_Nombre" />

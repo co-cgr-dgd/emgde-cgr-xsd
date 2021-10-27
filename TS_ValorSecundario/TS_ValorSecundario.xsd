@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="TS_ValorSecundario">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="E"/>
+			<xsd:enumeration value="I"/>
+			<xsd:enumeration value="T"/>
+			<xsd:enumeration value="H"/>
+			<xsd:enumeration value="O"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation xml:lang="es">
+			-E	-EVIDENCIAL
+			-I	-INFORMATIVO
+			-T	-TESTIMONIAL
+			-H	-HISTORICO
+			-O	-OTROS
+		</xsd:documentation>
+		<!--Anexo 11 pág 105 -->
+	</xsd:annotation>
+</xsd:schema>

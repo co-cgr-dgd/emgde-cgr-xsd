@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="TS_CondicionesReutilizacion">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Información clasificada "/>
+			<xsd:enumeration value="Información disponible NCM2"/>
+			<xsd:enumeration value="Información privada"/>
+			<xsd:enumeration value="Información Publica"/>
+		    <xsd:enumeration value="Información pública clasificada"/>
+			<xsd:enumeration value="Información pública reservada"/>
+			<xsd:enumeration value="No clasificada"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation xml:lang="es">
+			- Información clasificada 
+	          La Ley 1712 de 2014, articulo 18, en concordancia con la Ley 1266 de 2008 (Hábeas Data), indican que existe información que por su naturaleza no debe ser divulgada ya que puede atentar contra la intimidad de su propietario y solo es relevante para el titular. En esta categoría se encuentra la información de carácter privado y semi - privado.
+
+            - Información disponible 	
+			  Información que puede ser solicitada o consultada por la ciudadanía pero que no se encuentra publicada en el sitio web de la entidad. 
+			
+			- Información privada 
+	          La jurisprudencia de la Corte Constitucional, en Sentencia T-729 de 2002, hace referencia a la información privada de la siguiente manera: 
+              “La información privada, será́ aquella que por versar sobre información personal o no, y que, por encontrarse en un ámbito privado, solo puede ser obtenida y ofrecida por orden de autoridad judicial en el cumplimiento de sus funciones. Es el caso de los libros de los comerciantes, de los documentos privados, de las historias clínicas o de la información extraída a partir de la inspección del domicilio.“ 
+           
+		   -  Información Publica 
+	          La Ley 1712 de 2014, articulo 6 la describe como: “Es toda información que un sujeto obligado genere, obtenga, adquiera o controle en su calidad de tal”. Esta información es creada en el curso normal de la función misional de la entidad y tiene poca probabilidad de causar daño. 
+			
+			- Información pública clasificada 
+	          De acuerdo a la Ley 1712 de 2014, articulo 6: “Es aquella información que estando en poder o custodia de un sujeto obligado en su calidad de tal, pertenece al ámbito propio, particular y privado o semi - privado de una persona natural o jurídica por lo que su acceso podrá́ ser negado o exceptuado, siempre que se trate de las circunstancias legítimas y necesarias y los derechos particulares o privados consagrados en el artículo 18 de esta ley”. 
+              En caso de la divulgación de esta información, puede existir afectación a los derechos de privacidad de personas naturales o jurídicas descritas en el Artículo 18 de la Ley 1712 de 2014. 
+			
+			- Información pública reservada 
+	          De acuerdo al artículo 6 de la Ley 1712 de 2014 se define como “Es aquella información que estando en poder o custodia de un sujeto obligado en su calidad de tal, es exceptuada de acceso a la ciudadanía por daño a bienes o intereses públicos y bajo cumplimiento de la totalidad de los requisitos consagrados en el artículo 19 de esta ley”. 
+
+            - No clasificada	
+			  Activos de Información que deben ser incluidos en el inventario y que aún no han sido clasificados, deben ser tratados como activos de INFORMACIÓN PUBLICA RESERVADA.
+
+		</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

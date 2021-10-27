@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:complexType name="TC_Traza">
+		<!-- SE QUITA DEL PRINCIPAL EN ESE ORDEN TOCARIA HACERLO CON TODOS 
+		Y LUEGO SE CAMBIAN POR EXPLORARDOR A XSD-->
+		<xsd:sequence>
+			<xsd:element name="Accion" type="xsd:TC_Accion" />
+			<xsd:element name="MotivoReglado" type="xsd:string" />
+			<xsd:element name="UsuariodelaAccion" type="xsd:string" />
+			<xsd:element name="Descripcion" type="xsd:string" />
+			<xsd:element name="ModificacionMetadatos" type="xsd:string" />
+			<xsd:element name="HistoriadelCambio" type="xsd:TC_HistorialCambio" />
+			<!-- Pag 70 Preguntar Ing Cobos-->
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>		

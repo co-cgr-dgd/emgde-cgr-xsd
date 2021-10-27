@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:simpleType name="TS_EstadoExpediente">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="E01"/>
+			<xsd:enumeration value="E02"/>
+			<xsd:enumeration value="E03"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:annotation>
+		<xsd:documentation xml:lang="es">
+			-E01 -Abierto.
+			-E02 -Cerrado.
+			-E03 -Índice electrónico cerrado.
+    	</xsd:documentation>
+	</xsd:annotation>
+</xsd:schema>

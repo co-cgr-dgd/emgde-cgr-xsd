@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <xsd:schema 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"          
+    xmlns:ts_cd="https://co-cgr-dgd.github.io/emgde-cgr-xsd"
+          targetNamespace="https://co-cgr-dgd.github.io/emgde-cgr-xsd"
+          elementFormDefault="qualified" attributeFormDefault="unqualified">
+     <xsd:element name ="metadatos_cd" type="ts_cd:TS_CategoriaDocumental"/>
+    <xsd:simpleType name="TS_CategoriaDocumental">
+      <xsd:restriction base="xsd:string">
+        <xsd:enumeration value="CD01"/>
+        <xsd:enumeration value="CD02"/>
+        <xsd:enumeration value="CD03"/>
+        <xsd:enumeration value="CD04"/>
+        <xsd:enumeration value="CD05"/>
+        <xsd:enumeration value="CD06"/>
+        <xsd:enumeration value="CD07"/>
+        <xsd:enumeration value="CD99"/>
+      </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:annotation>
+      <xsd:documentation xml:lang="es">
+        - CD01 - DOCUMENTO SIMPLE.
+        - CD02 - EXPEDIENTE.
+        - CD03 - SUBEXPEDIENTE.
+        - CD04 - CARPETA.
+        - CD05 - SUBCARPETA.
+        - CD06 - SERIE
+        - CD07 - SUB SERIE
+        - CD99 - OTROS.
+      </xsd:documentation>
+    </xsd:annotation>
+  </xsd:schema>
+  
